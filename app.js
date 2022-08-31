@@ -26,6 +26,7 @@ nms.on('prePlay', (id, StreamPath, args) => {
     }else {
         ukey++;
         console.log("Playing now, next key is: "+ukey);
+        console.log("You can use the above key for anything");
     }
 });
 nms.on('prePublish', (id, StreamPath, args) => {
