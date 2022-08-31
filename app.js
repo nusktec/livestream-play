@@ -2,7 +2,7 @@ const NodeMediaServer = require('node-media-server');
 
 const config = {
     rtmp: {
-        port: process.env.PORT || 80,
+        port: 1935,
         chunk_size: 60000,
         gop_cache: true,
         ping: 30,
@@ -13,7 +13,7 @@ const config = {
         allow_origin: '*'
     },
 }
-
+console.log("Available port: "+process.env.PORT);
 var nms = new NodeMediaServer(config)
 nms.run();
 let ukey = 1;
