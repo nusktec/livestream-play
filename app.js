@@ -13,7 +13,6 @@ const config = {
         allow_origin: '*'
     },
 }
-console.log("Available port: "+process.env.PORT);
 var nms = new NodeMediaServer(config)
 nms.run();
 let ukey = 1;
